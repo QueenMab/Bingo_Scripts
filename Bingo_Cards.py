@@ -1,7 +1,11 @@
+### This script creates bingo cards in a .csv format from a input text file that has each item on a new line ###
+
 import random
 
 filename = "b_word.txt"
 num_sheet = 10
+
+### In the two lines above I have hard-coded the input file name and the desired number of bingo cards, which can easily be changed to match your bingo needs! ###
 
 with open (filename) as bingo:
 	bingo_words = bingo.read().split("\n")
